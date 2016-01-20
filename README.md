@@ -7,6 +7,10 @@ To build package you can run:
 ------------------------------------
 <pre>[root:~/src] # rpmbuild -ba SPECS/cryptsetup-1.6.8-2.fc23.spec</pre>
 
+don't forget to rebuild initramfs with the new package installed:
+
+<pre>dracut -vf</pre>
+
 cryptsetup-nuke-keys
 ====================
 
